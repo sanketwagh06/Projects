@@ -1,0 +1,1 @@
+Note: The ipynb files can be opened using PyCharm, but I would request you to use the ipython notebook - Jupyter to view the notebooks. SInce I feel it would be easier to run the code that way.
