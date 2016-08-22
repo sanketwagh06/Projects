@@ -1,0 +1,88 @@
+Code modifications
+
+Class: Grammar.java
+
+Method:  parse(String sent[])
+System.out.println("Current");
+print(cur);
+System.out.println("Next");
+print(next);
+System.out.println("Previous");
+print(back);
+//TODO: Return a full parse.
+		cur = (Vector)cols.get(cols.size()-1);
+		Production finished = new Production((Production)getProds("ROOT").get(0));
+		finished.dot = finished.right.length;
+		boolean parsed = false;
+		for(int i=0;i<cur.size();i++)
+		{
+			p = (Production)cur.get(i); 
+			if(p.equals(finished))
+			{
+				parsed = true; 
+			}
+		}
+		if(parsed){
+			System.out.println("Finished right: "+finished.right[0]);
+			Vector finalProds = getFinalProds(cols);
+			Production pFinal = new Production();
+			for(int i = 0; i<finalProds.size(); i++){
+				Production s = (Production) finalProds.get(i);
+				System.out.println("s left: "+s.left);
+				if(s.left.equals("s")){
+					pFinal = s;
+				}
+				
+			}
+			return pFinal;
+		}
+		else{
+			return null;
+		}
+	}
+	
+
+public void print(Vector v){
+		for (int i =0; i< v.size();i++){
+			Production p = (Production) v.get(i);
+			System.out.print(p+" ==>\t");
+			p.isChild();
+			System.out.println();
+		}
+	}
+		public void print(HashMap h){
+			for(Iterator i = h.keySet().iterator(); i.hasNext();) {
+			    Production key = (Production)i.next();
+			    System.out.print(key+"\t\t:\t\t");
+			    Vector  bp  = (Vector) h.get(key);
+			    for (int j =0; j< bp.size();j++){
+			    	Production p = (Production) bp.get(j);
+			    	System.out.print(p.toString()+" ,\t");
+			    }
+			    System.out.println();
+			}
+		}
+
+Class: Production.java
+/**This prints a parse, a chain of productions.
+	 * TODO: Write this function!
+	 */
+	public void recursivePrint()
+	{
+		
+		System.out.print(left.toUpperCase()+" [ ");
+		for(int i =0; i<right.length; i++){
+			if(this.children!=null){
+
+				this.children[i].recursivePrint();
+			}
+			else{
+				for(int j=0; j< right.length; j++){
+					System.out.print(right[j]);
+				}
+			}
+		}
+		System.out.print(" ] ");
+	}
+}
+

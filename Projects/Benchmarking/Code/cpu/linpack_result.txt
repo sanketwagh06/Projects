@@ -1,0 +1,100 @@
+Result 1 :
+
+This is a SAMPLE run script for SMP LINPACK. Change it to reflect
+the correct number of CPUs/threads, problem input files, etc..
+Fri Sep 19 14:28:41 UTC 2014
+Intel(R) Optimized LINPACK Benchmark data
+
+Current date/time: Fri Sep 19 14:20:53 2014
+
+CPU frequency:    3.260 GHz
+Number of CPUs: 1
+Number of cores: 8
+Number of threads: 8
+
+Parameters are set to:
+
+Number of tests: 15
+Number of equations to solve (problem size) : 1000  2000  5000  10000 15000 18000 20000 22000 25000 26000 27000 30000 35000 40000 45000
+Leading dimension of array                  : 1000  2000  5008  10000 15000 18008 20016 22008 25000 26000 27000 30000 35000 40000 45000
+Number of trials to run                     : 4     2     2     2     2     2     2     2     2     2     1     1     1     1     1    
+Data alignment value (in Kbytes)            : 4     4     4     4     4     4     4     4     4     4     4     1     1     1     1    
+
+Maximum memory requested that can be used=2593516256, at the size=18000
+
+=================== Timing linear equation system solver ===================
+
+Size   LDA    Align. Time(s)    GFlops   Residual     Residual(norm) Check
+1000   1000   4      0.025      26.5945  1.290190e-12 4.399880e-02   pass
+1000   1000   4      0.023      28.9112  1.290190e-12 4.399880e-02   pass
+1000   1000   4      0.023      29.4967  1.290190e-12 4.399880e-02   pass
+1000   1000   4      0.024      28.2421  1.290190e-12 4.399880e-02   pass
+2000   2000   4      0.155      34.4093  5.256129e-12 4.572188e-02   pass
+2000   2000   4      0.158      33.7830  5.256129e-12 4.572188e-02   pass
+5000   5008   4      2.240      37.2176  2.441086e-11 3.403898e-02   pass
+5000   5008   4      2.217      37.6182  2.441086e-11 3.403898e-02   pass
+10000  10000  4      17.725     37.6238  1.053194e-10 3.713669e-02   pass
+10000  10000  4      19.002     35.0950  1.053194e-10 3.713669e-02   pass
+15000  15000  4      88.524     25.4219  2.296232e-10 3.616603e-02   pass
+15000  15000  4      66.627     33.7770  2.296232e-10 3.616603e-02   pass
+Killed
+Done: Fri Sep 19 14:26:06 UTC 2014
+
+
+Result 2:
+
+This is a SAMPLE run script for SMP LINPACK. Change it to reflect
+the correct number of CPUs/threads, problem input files, etc..
+Fri Sep 19 14:28:41 UTC 2014
+Intel(R) Optimized LINPACK Benchmark data
+
+Current date/time: Fri Sep 19 14:28:41 2014
+
+CPU frequency:    3.442 GHz
+Number of CPUs: 1
+Number of cores: 8
+Number of threads: 8
+
+Parameters are set to:
+
+Number of tests: 15
+Number of equations to solve (problem size) : 1000  2000  5000  10000 15000 18000 20000 22000 25000 26000 27000 30000 35000 40000 45000
+Leading dimension of array                  : 1000  2000  5008  10000 15000 18008 20016 22008 25000 26000 27000 30000 35000 40000 45000
+Number of trials to run                     : 4     2     2     2     2     2     2     2     2     2     1     1     1     1     1    
+Data alignment value (in Kbytes)            : 4     4     4     4     4     4     4     4     4     4     4     1     1     1     1    
+
+Maximum memory requested that can be used=2593516256, at the size=18000
+
+=================== Timing linear equation system solver ===================
+
+Size   LDA    Align. Time(s)    GFlops   Residual     Residual(norm) Check
+1000   1000   4      0.030      21.9784  1.290190e-12 4.399880e-02   pass
+1000   1000   4      0.024      28.3807  1.290190e-12 4.399880e-02   pass
+1000   1000   4      0.028      24.1878  1.290190e-12 4.399880e-02   pass
+1000   1000   4      0.026      25.3221  1.290190e-12 4.399880e-02   pass
+2000   2000   4      0.164      32.5408  5.256129e-12 4.572188e-02   pass
+2000   2000   4      0.158      33.7048  5.256129e-12 4.572188e-02   pass
+5000   5008   4      2.263      36.8537  2.441086e-11 3.403898e-02   pass
+5000   5008   4      2.275      36.6462  2.441086e-11 3.403898e-02   pass
+10000  10000  4      17.991     37.0665  1.053194e-10 3.713669e-02   pass
+10000  10000  4      19.218     34.7006  1.053194e-10 3.713669e-02   pass
+15000  15000  4      66.172     34.0092  2.296232e-10 3.616603e-02   pass
+15000  15000  4      66.392     33.8963  2.296232e-10 3.616603e-02   pass
+18000  18008  4      659.072    5.9002   2.993089e-10 3.277800e-02   pass
+18000  18008  4      737.333    5.2739   2.993089e-10 3.277800e-02   pass
+
+Performance Summary (GFlops)
+
+Size   LDA    Align.  Average  Maximal
+1000   1000   4       24.9672  28.3807 
+2000   2000   4       33.1228  33.7048 
+5000   5008   4       36.7500  36.8537 
+10000  10000  4       35.8835  37.0665 
+15000  15000  4       33.9528  34.0092 
+18000  18008  4       5.5871   5.9002  
+
+Residual checks PASSED
+
+End of tests
+
+Done: Fri Sep 19 15:11:09 UTC 2014

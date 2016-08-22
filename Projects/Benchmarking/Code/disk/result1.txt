@@ -1,0 +1,86 @@
+Run 1 :
+
+
+----Number of Threads = 1 ---- 
+
+-------Creating the ReadFile - input.txt------- 
+
+----Block Size = 1 Byte----Total Data = 20000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	0.488522 	 39.043251		0.000024 
+Seq Read Operation	0.500097 	 38.139576		0.000025 
+Random Write Operation	35.098263 	 0.543431		0.001755 
+Random Read Operation	3.895100 	 4.896790		0.000195 
+
+----Block Size = 1 KiloByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	0.300346 	 650.291687		0.001502 
+Seq Read Operation	0.065534 	 2980.322998		0.000328 
+Random Write Operation	0.523395 	 373.164612		0.002617 
+Random Read Operation	0.049113 	 3976.798340		0.000246 
+
+----Block Size = 1 MegaByte----Total Data = 2000000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	4.079935 	 490.203888		2.039968 
+Seq Read Operation	0.022354 	 89469.445312		0.011177 
+Random Write Operation	0.526510 	 3798.598389		0.263255 
+Random Read Operation	0.178417 	 11209.694336		0.089208 
+
+----Number of Threads = 2 ---- 
+
+-------Creating the ReadFile - input.txt------- 
+
+----Block Size = 1 Byte----Total Data = 20000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	0.494442 	 38.575783		0.000025 
+Seq Read Operation	0.501836 	 38.007408		0.000025 
+Random Write Operation	71.557007 	 0.266550		0.003578 
+Random Read Operation	5.975267 	 3.192072		0.000299 
+
+----Block Size = 1 KiloByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	0.328545 	 594.477173		0.001643 
+Seq Read Operation	0.097327 	 2006.776123		0.000487 
+Random Write Operation	0.993960 	 196.499252		0.004970 
+Random Read Operation	0.070701 	 2762.513916		0.000354 
+
+----Block Size = 1 MegaByte----Total Data = 2000000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	1.895873 	 1054.922974		0.947936 
+Seq Read Operation	0.096837 	 20653.156250		0.048419 
+Random Write Operation	0.845984 	 2364.112305		0.422992 
+Random Read Operation	0.175658 	 11385.760742		0.087829 
+
+----Number of Threads = 4 ---- 
+
+-------Creating the ReadFile - input.txt------- 
+
+----Block Size = 1 Byte----Total Data = 20000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	0.566398 	 33.675076		0.000028 
+Seq Read Operation	0.579256 	 32.927574		0.000029 
+Random Write Operation	161.904816 	 0.117807		0.008095 
+Random Read Operation	18.114876 	 1.052918		0.000906 
+
+----Block Size = 1 KiloByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	0.611819 	 319.232483		0.003059 
+Seq Read Operation	0.260937 	 748.504395		0.001305 
+Random Write Operation	1.955520 	 99.877533		0.009778 
+Random Read Operation	0.171942 	 1135.919189		0.000860 
+
+----Block Size = 1 MegaByte----Total Data = 2000000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	 Latency(ms) 
+Seq Write Operation	1.697393 	 1178.277588		0.848696 
+Seq Read Operation	0.105283 	 18996.462891		0.052641 
+Random Write Operation	0.963137 	 2076.547852		0.481568 
+Random Read Operation	0.238722 	 8377.955078		0.119361

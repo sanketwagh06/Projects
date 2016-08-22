@@ -1,0 +1,59 @@
+Run 1 :
+
+----Operation = Write---- 
+
+Block Size	Total Data	Total Time ms	Bandwidth MBPS
+
+1 B		1000000  B	8223.550	  0.00012
+1 KB		 100000 KB	 822.310	  0.11876
+1 MB		 100000 MB	27416.418	  3.64745
+
+----Operation = Read---- 
+
+Block Size	Total Data	Total Time ms	Bandwidth MBPS
+
+1 B		1000000  B	 403.841	  0.00236
+1 KB		 100000 KB	  40.526	  2.40972
+1 MB		 100000 MB	  34.865	2868.20594
+
+
+------------------------------------------------------------------
+
+Run 2 :
+
+
+----Operation = Write---- 
+
+Block Size	Total Data	Total Time ms	Bandwidth MBPS
+
+1 B		1000000  B	8222.804	  0.00012
+1 KB		 100000 KB	 822.442	  0.11874
+1 MB		 100000 MB	27476.774	  3.63944
+
+----Operation = Read---- 
+
+Block Size	Total Data	Total Time ms	Bandwidth MBPS
+
+1 B		1000000  B	 412.542	  0.00231
+1 KB		 100000 KB	  40.715	  2.39853
+1 MB		 100000 MB	  36.628		
+
+-------------------------------------------------------------------
+
+Run 3 :
+
+----Operation = Write---- 
+
+Block Size	Total Data	Total Time ms	Bandwidth MBPS
+
+1 B		1000000  B	6968.699	  0.00014
+1 KB		 100000 KB	 742.126	  0.13159
+1 MB		 100000 MB	27729.058	  3.60633
+
+----Operation = Read---- 
+
+Block Size	Total Data	Total Time ms	Bandwidth MBPS
+
+1 B		1000000  B	 432.022	  0.00221
+1 KB		 100000 KB	  43.306	  2.25503
+1 MB		 100000 MB	  37.665	2654.98473

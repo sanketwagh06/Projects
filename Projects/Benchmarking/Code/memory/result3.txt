@@ -1,0 +1,55 @@
+Run 3:
+
+----Number of Threads = 1 ---- 
+
+
+----Block Size = 1 Byte----Total Data = 20000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	Latency(ms) 
+Seq Write Operation	0.267517 	 71.298218		0.000013 
+Seq Read Operation	0.261923 	 72.820969		0.000013 
+Random Write Operation	0.565292 	 33.740944		0.000028 
+Random Read Operation	1.474436 	 12.936123		0.000074 
+
+----Block Size = 1 KiloByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	Latency(ms) 
+Seq Write Operation	0.734385 	 265.953827		0.003672 
+Seq Read Operation	0.675640 	 289.077759		0.003378 
+Random Write Operation	0.769043 	 253.968231		0.003845 
+Random Read Operation	0.718265 	 271.922607		0.003591 
+
+----Block Size = 1 MegaByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	Latency(ms) 
+Seq Write Operation	0.772653 	 258.848419		3.863265 
+Seq Read Operation	0.700406 	 285.548676		3.502030 
+Random Write Operation	0.743441 	 269.019348		3.717205 
+Random Read Operation	0.695187 	 287.692383		3.475935 
+
+----Number of Threads = 2 ---- 
+
+
+----Block Size = 1 Byte----Total Data = 20000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	Latency(ms) 
+Seq Write Operation	0.272765 	 69.926567		0.000014 
+Seq Read Operation	0.264410 	 72.135887		0.000013 
+Random Write Operation	0.958684 	 19.895487		0.000048 
+Random Read Operation	2.350142 	 8.115887		0.000118 
+
+----Block Size = 1 KiloByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	Latency(ms) 
+Seq Write Operation	0.771505 	 253.157639		0.003858 
+Seq Read Operation	0.702649 	 277.965942		0.003513 
+Random Write Operation	1.673519 	 116.707664		0.008368 
+Random Read Operation	1.019344 	 191.606079		0.005097 
+
+----Block Size = 1 MegaByte----Total Data = 200000 MBs---- 
+
+Operation		Time(Sec)	 Throughput(MB/Sec)	Latency(ms) 
+Seq Write Operation	1.113077 	 179.682083		5.565385 
+Seq Read Operation	1.037663 	 192.740891		5.188313 
+Random Write Operation	1.106462 	 180.756317		5.532310 
+Random Read Operation	1.027841 	 194.582535		5.139207 

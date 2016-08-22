@@ -1,0 +1,30 @@
+The evaluation pf parser is done with two grammer rules. Simple and Wallstreet.
+The simple grammer can parse sentence with any of the following nouns john ,whorfin, planet, earth, chicago, newyork, ten, jetcar, alien, aliens, watermelon, warermelons;pronouns i,we,us,you,he,she,it,they;determiners a,the,this,these;verbs drive,drives,driven,driving,give,gives,live,lives,steal,steals;auxillaries do,did,does,will,was is and preposition in,on,to,from.
+
+The syntatic rules for parsing in simple grammer is:
+ROOT->s
+s->np vp
+s->faux np vp
+s->np fis np
+np->fname
+np->fpron
+np->nbar
+nbar->fn
+nbar-mods->pp
+nbar-mods->pp nbar-mods
+vp->vbar
+vbar->fv
+vbar->faux fv
+vbar->vbar np
+vbar->vbar np np
+vbar->vbar np pp
+1) The parser can parse sentence with below categories
+	The grammars contain rules. If the sentence provided have words in the grammar(using the specific grammar simple and wallstreet(in the grammar file)) and the rules are satisfied, the sentence will be parsed.
+	It is taken from this that the words in the sentence should also be mentioned in the rules.
+2)The types of sentences that will fail:
+	Sentences whose words are not present in the grammar specified.
+	If the sentence is grammatically incorrect. (corresponding to the rules specified)
+3)Improvements for failed sentences:
+	By adding new words to the grammar such that the parse does not fail.
+	Domain related words cn be added to the grammar file with corresponding POS tags.
+	Find where the parser failed and that rule could be added to the grammar. 	for example:	np -> fname fname --> Was not there; then it can be added.

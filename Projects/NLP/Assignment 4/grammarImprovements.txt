@@ -1,0 +1,53 @@
+The changes in the grammar is stated below and updated in the simple.gr.
+The grammar is updated with words that would be used in simple sentences but have not yet been added. 
+The parser can now parse sentences with newyork which failed before the grammar was updated.
+The parser can parse sentence with conjuction also and the required rule has been updated in the grammar.
+Changes in the grammar
+
+Newly added coordinate conjunction
+0	fcnj	and
+0	fcnj	but
+0	fcnj	though
+
+
+Newly added fname
+0	fname	newyork
+0	fname	cupertino
+0	fname	sandeigo
+0	fname	chicago
+
+
+Newly added fn
+0	fn	car
+0	fn	bike
+0	fn	camera
+0	fn	sportcar
+0	fn	van
+0	fn	rv
+0	fn	jetcar
+
+Newly added fv
+0	fv	swimming
+0	fv	swim
+0	fv	run
+0	fv	running
+0	fv	hiking
+0	fv	diving
+
+Newly added rules
+0	s	np fcnj	vp
+0	s	np 
+0	np	fname
+0	np	fname fname
+0	np	fpron
+0	np	nbar
+0	np	fd nbar
+0	nbar	fn
+0	vp	vbar
+0	vbar	fv
+0	vbar	faux fv
+0	vbar	vbar np
+0	vbar	vbar np np
+0	vbar	vbar np pp
+0	vbar-mods	pp
+0	pp	fp np

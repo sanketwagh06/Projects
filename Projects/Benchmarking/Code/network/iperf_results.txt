@@ -1,0 +1,100 @@
+SINGLE THREAD:
+------------------------------------------------------------------------------------------------------------------
+chaitanya@chaitanya-Inspiron-5547:~$ iperf -c 127.0.0.1 -p 5000 -f m -w 65536
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 5000
+TCP window size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  3] local 127.0.0.1 port 41999 connected with 127.0.0.1 port 5000
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-10.0 sec  51579 MBytes  43267 Mbits/sec
+
+
+
+chaitanya@chaitanya-Inspiron-5547:~$ iperf -s 127.0.0.1 -p 5000 -f m -w 65536
+iperf: ignoring extra argument -- 127.0.0.1
+------------------------------------------------------------
+Server listening on TCP port 5000
+TCP window size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  4] local 127.0.0.1 port 5000 connected with 127.0.0.1 port 41999
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  51579 MBytes  43231 Mbits/sec
+
+---------------------------------------------------------------------------------
+Client connecting to 127.0.0.1, UDP port 5000
+Sending 1470 byte datagrams
+UDP buffer size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  3] local 127.0.0.1 port 50327 connected with 127.0.0.1 port 5000
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-10.0 sec  0.70 MBytes  0.59 Mbits/sec
+[  3] Sent 893 datagrams
+[  3] Server Report:
+[  3]  0.0- 1.2 sec  0.16 MBytes  1.05 Mbits/sec   0.003 ms  782/  893 (88%)
+
+chaitanya@chaitanya-Inspiron-5547:~$ iperf -u -s 127.0.0.1 -p 5000 -f m -w 65536 
+iperf: ignoring extra argument -- 127.0.0.1
+------------------------------------------------------------
+Server listening on UDP port 5000
+Receiving 1470 byte datagrams
+UDP buffer size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------------------------------------------
+[  3] local 127.0.0.1 port 5000 connected with 127.0.0.1 port 50327
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0- 1.2 sec  0.16 MBytes  1.05 Mbits/sec   0.003 ms  782/  893 (88%)
+-------------------------------------------------------------------------------------------------
+TWO THREADS:
+
+Client connecting to 127.0.0.1, TCP port 5000
+TCP window size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  4] local 127.0.0.1 port 42085 connected with 127.0.0.1 port 5000
+[  3] local 127.0.0.1 port 42084 connected with 127.0.0.1 port 5000
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  37232 MBytes  31232 Mbits/sec
+[  3]  0.0-10.0 sec  36836 MBytes  30900 Mbits/sec
+[SUM]  0.0-10.0 sec  74067 MBytes  62132 Mbits/sec
+
+chaitanya@chaitanya-Inspiron-5547:~$ iperf -s 127.0.0.1 -p 5000 -f m -w 65536
+iperf: ignoring extra argument -- 127.0.0.1
+------------------------------------------------------------
+Server listening on TCP port 5000
+TCP window size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  4] local 127.0.0.1 port 5000 connected with 127.0.0.1 port 42084
+[  5] local 127.0.0.1 port 5000 connected with 127.0.0.1 port 42085
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  36836 MBytes  30877 Mbits/sec
+[  5]  0.0-10.0 sec  37232 MBytes  31209 Mbits/sec
+[SUM]  0.0-10.0 sec  74067 MBytes  62085 Mbits/sec
+
+
+Client connecting to 127.0.0.1, UDP port 5000
+Sending 1470 byte datagrams
+UDP buffer size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  4] local 127.0.0.1 port 42539 connected with 127.0.0.1 port 5000
+[  3] local 127.0.0.1 port 40501 connected with 127.0.0.1 port 5000
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  1.25 MBytes  1.05 Mbits/sec
+[  4] Sent 893 datagrams
+[  3]  0.0-10.0 sec  1.25 MBytes  1.05 Mbits/sec
+[  3] Sent 893 datagrams
+[SUM]  0.0-10.0 sec  2.50 MBytes  2.10 Mbits/sec
+[  4] Server Report:
+[  4]  0.0-10.0 sec  1.25 MBytes  1.05 Mbits/sec   0.007 ms    0/  893 (0%)
+[  3] Server Report:
+[  3]  0.0-10.0 sec  1.25 MBytes  1.05 Mbits/sec   0.003 ms    1/  893 (0.11%)
+
+Server listening on UDP port 5000
+Receiving 1470 byte datagrams
+UDP buffer size: 0.12 MByte (WARNING: requested 0.06 MByte)
+------------------------------------------------------------
+[  3] local 127.0.0.1 port 5000 connected with 127.0.0.1 port 42539
+[  4] local 127.0.0.1 port 5000 connected with 127.0.0.1 port 40501
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0-10.0 sec  1.25 MBytes  1.05 Mbits/sec   0.008 ms    0/  893 (0%)
+[  4]  0.0-10.0 sec  1.25 MBytes  1.05 Mbits/sec   0.004 ms    1/  893 (0.11%)
+[SUM]  0.0-10.0 sec  2.50 MBytes  2.10 Mbits/sec
+

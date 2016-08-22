@@ -1,0 +1,242 @@
+{
+  "cut1": 3, 
+  "gn_1_2": [], 
+  "gn_1_4": [], 
+  "gn_2_3": [], 
+  "gn_sizes": [
+    100, 
+    68, 
+    100, 
+    32, 
+    40, 
+    47
+  ], 
+  "graph_edges": 6060, 
+  "graph_order": 5062, 
+  "jaccard_wt": [
+    [
+      [
+        "Bill Gates", 
+        "Bill & Melinda Gates Foundation"
+      ], 
+      180.27666588730418
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Global Citizen"
+      ], 
+      116.30597168635963
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Microsoft Research"
+      ], 
+      105.35797720797721
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Chase"
+      ], 
+      91.79347826086956
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Sue Desmond-Hellmann"
+      ], 
+      89.32408416355334
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "PATH"
+      ], 
+      84.10972222222223
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "ONE"
+      ], 
+      76.40269383394384
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "MY World"
+      ], 
+      73.83468337218338
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "GivingTuesday"
+      ], 
+      73.83194009056078
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Christiane Amanpour"
+      ], 
+      62.58313397129187
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Rotary Peace Centers"
+      ], 
+      61.27777777777778
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "YouthCare"
+      ], 
+      61.25757575757576
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Water.org"
+      ], 
+      61.219298245614034
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "HeForShe"
+      ], 
+      61.21666666666666
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Global Poverty Project"
+      ], 
+      60.6606945685893
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "CNN"
+      ], 
+      59.47636452241716
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Girl Up"
+      ], 
+      57.349597953216374
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Ezra Klein"
+      ], 
+      53.41306818181818
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "The Ella Rose Collection"
+      ], 
+      50.86156597026162
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Speak Up Africa"
+      ], 
+      50.8513210927004
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "CDC Global"
+      ], 
+      47.571558704453444
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Acer"
+      ], 
+      46.979484770182445
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Lenovo"
+      ], 
+      46.97289562289562
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Microsoft Tag"
+      ], 
+      46.97289562289562
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Xbox Entertainment"
+      ], 
+      46.97115432936328
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "HP"
+      ], 
+      46.97031346327121
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "MSN"
+      ], 
+      46.9685746352413
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Surface"
+      ], 
+      46.96759259259259
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Girl Effect"
+      ], 
+      46.64657634032634
+    ], 
+    [
+      [
+        "Bill Gates", 
+        "Al Gore"
+      ], 
+      45.9375
+    ]
+  ], 
+  "ncv1": 1.0285714285714285, 
+  "score_clusters": [
+    0.5394522186431889, 
+    0.7112986541855564, 
+    0.6125866583993509, 
+    0.7394497863247863, 
+    0.38487710745480397, 
+    0.169372331833391
+  ], 
+  "subgraph_edges": 1710, 
+  "subgraph_edges_2": 1124, 
+  "subgraph_order": 712, 
+  "subgraph_order_2": 417, 
+  "volume1": 7
+}
