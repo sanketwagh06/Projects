@@ -1,0 +1,1 @@
+{ "options" : { "create" : "Organic" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "test_database.Organic", "name" : "_id_" } ] }

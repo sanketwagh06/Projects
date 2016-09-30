@@ -1,0 +1,1 @@
+{ "options" : { "create" : "Chicago" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "test_database.Chicago", "name" : "_id_" } ] }
